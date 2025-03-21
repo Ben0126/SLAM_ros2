@@ -1,0 +1,20 @@
+slam_toolbox:
+  ros__parameters:
+    # 基本配置
+    use_sim_time: false
+    map_frame: map
+    base_frame: base_link
+    odom_frame: odom
+    scan_topic: /scan
+    laser_frame: laser  # 確保這個與RPLidar發布的frame_id匹配
+
+    # 掃描器配置
+    max_laser_range: 12.0
+    map_update_interval: 5.0
+    resolution: 0.05
+    
+    # SLAM相關參數
+    minimum_time_interval: 0.5
+    transform_timeout: 0.2
+    update_timing: true
+    enable_interactive_mode: false 
