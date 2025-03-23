@@ -4,7 +4,7 @@ include "trajectory_builder.lua"
 options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
-  map_frame = "map"              -- 地圖坐標系
+  map_frame = "map",              -- 地圖坐標系
   tracking_frame = "base_link",   -- 跟踪坐標系（通常是機器人基座）
   published_frame = "base_link",  -- 發布的坐標系
   odom_frame = "odom",           -- 里程計坐標系
@@ -25,7 +25,7 @@ options = {
   odometry_sampling_ratio = 1.,
   fixed_frame_pose_sampling_ratio = 1.,
   imu_sampling_ratio = 1.,
-  landmarks_sampling_ratio = 1.,
+  landmarks_sampling_ratio = 1.
 
 }
 

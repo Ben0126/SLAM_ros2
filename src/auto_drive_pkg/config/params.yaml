@@ -1,0 +1,14 @@
+# 避障参数
+safe_distance: 0.5          # 安全距离（米）
+min_front_angle: -30.0      # 前方检测最小角度（度）
+max_front_angle: 30.0       # 前方检测最大角度（度）
+
+# 控制参数
+default_speed: 0.5          # 正常行驶速度（0-1之间）
+stop_speed: 0.0             # 停止速度
+turn_angle: 30.0            # 避障转向角度（度）
+
+# 话题名称
+lidar_topic: "/scan"        # 激光雷达话题
+motor_topic: "/motor_speed" # 电机控制话题
+servo_topic: "/steering_angle" # 舵机控制话题
